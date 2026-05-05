@@ -5,6 +5,7 @@
   --gold: #FCD116;
   --blue: #002B7F;
   --red: #CE1126;
+  --gold-dark: #e5bc10;
   --font-heading: 'Dancing Script', cursive;
   --font-body: Inter, system-ui, -apple-system, sans-serif;
   --max-w: 900px;
@@ -19,6 +20,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Typography ── */
 h2 { font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3rem); color: var(--gold); margin-bottom: 1.25rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 4rem); color: var(--gold); }
 h3 { font-family: var(--font-heading); font-size: 1.5rem; }
 p { margin-bottom: 0.9rem; }
 p:last-child { margin-bottom: 0; }
@@ -89,7 +91,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.85rem;
   transition: background 0.2s, transform 0.15s;
 }
-.btn:hover { background: #e5bc10; transform: translateY(-2px); }
+.btn:hover { background: var(--gold-dark); transform: translateY(-2px); }
 
 /* ── Section Divider ── */
 .divider {
@@ -196,9 +198,13 @@ p:last-child { margin-bottom: 0; }
 footer { text-align: center; padding: 2rem 1rem; font-size: 0.82rem; opacity: 0.45; }
 
 /* ── Mobile ── */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .site-header { padding: 0.65rem 1rem; }
   .site-nav { gap: 1rem; }
   .section-inner { padding: 3rem 1.25rem; }
   .hero { padding: 4rem 1.25rem 3rem; gap: 1.5rem; }
 }
+
+/* ── Accessibility ── */
+a:focus-visible,
+.btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
