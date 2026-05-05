@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Piatră Stockholm</title>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('cdp-lang');
+      if (saved === 'ro') { location.replace('/ro/'); return; }
+      if (saved === 'sv') { location.replace('/sv/'); return; }
+      var lang = (navigator.language || '').toLowerCase();
+      if (lang.startsWith('ro')) {
+        localStorage.setItem('cdp-lang', 'ro');
+        location.replace('/ro/');
+      } else {
+        localStorage.setItem('cdp-lang', 'sv');
+        location.replace('/sv/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <noscript>
+    <p style="font-family:sans-serif;padding:2rem">
+      <a href="/sv/">Svenska</a> &nbsp;|&nbsp; <a href="/ro/">Română</a>
+    </p>
+  </noscript>
+</body>
+</html>
