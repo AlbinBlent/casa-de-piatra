@@ -8,8 +8,7 @@ Enable GitHub Pages in repo Settings → Pages → Source: `main` branch, root `
 
 ## Before going live — fill in these placeholders
 
-1. **Email address** — search for `email@casadepiatra.se` in `sv/index.html` and `ro/index.html` and replace with the real email.
-2. **Tally.so form** — replace `TALLY_FORM_URL_HERE` in both `sv/index.html` and `ro/index.html` with your Tally embed URL (e.g. `https://tally.so/embed/XXXXXX?alignLeft=1&hideTitle=1&transparentBackground=1`).
+1. **Tally.so form** — replace `TALLY_FORM_URL_HERE` in both `sv/index.html` and `ro/index.html` with your Tally embed URL (e.g. `https://tally.so/embed/XXXXXX?alignLeft=1&hideTitle=1&transparentBackground=1`).
 
 ## Local development
 
@@ -27,6 +26,6 @@ python3 -m http.server 8080
 ├── ro/index.html     ← Romanian page
 └── assets/
     ├── style.css
-    ├── logo.jpg
-    └── menu.png
+    ├── logo.jpg   ← dark logo, currently unused on the light design
+    └── menu.png   ← old price-list menu image, no longer linked
 ```
