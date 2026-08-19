@@ -80,16 +80,6 @@ p:last-child { margin-bottom: 0; }
   transition: color 0.2s;
 }
 .site-nav a:hover { color: var(--gold-deep); }
-.lang-toggle { display: flex; gap: 0.3rem; font-size: 0.78rem; }
-.lang-toggle a {
-  padding: 0.18rem 0.55rem;
-  border: 1px solid var(--gold-line);
-  border-radius: 2px;
-  color: var(--ink-soft);
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-.lang-toggle a.active { background: var(--gold); border-color: var(--gold); color: var(--panel); font-weight: 700; }
-.lang-toggle a:not(.active):hover { border-color: var(--gold); color: var(--gold-deep); }
 
 /* ── Hero ── */
 .hero {

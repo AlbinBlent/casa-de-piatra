@@ -1,6 +1,8 @@
-# Casa de Piatră Stockholm
+# Karpatisk Catering & Event
 
-Bilingual (Swedish/Romanian) GitHub Pages website for Casa de Piatră Stockholm catering & events.
+Swedish single-page GitHub Pages website for Karpatisk Catering & Event
+(formerly branded Casa de Piatră Stockholm) — catering and event planning
+in Stockholm.
 
 ## Live site
 
@@ -8,7 +10,7 @@ Enable GitHub Pages in repo Settings → Pages → Source: `main` branch, root `
 
 ## Before going live — fill in these placeholders
 
-1. **Tally.so form** — replace `TALLY_FORM_URL_HERE` in both `sv/index.html` and `ro/index.html` with your Tally embed URL (e.g. `https://tally.so/embed/XXXXXX?alignLeft=1&hideTitle=1&transparentBackground=1`).
+1. **Tally.so form** — replace `TALLY_FORM_URL_HERE` in `index.html` with your Tally embed URL (e.g. `https://tally.so/embed/XXXXXX?alignLeft=1&hideTitle=1&transparentBackground=1`).
 
 ## Local development
 
@@ -21,11 +23,11 @@ python3 -m http.server 8080
 
 ```
 /
-├── index.html        ← language detector (redirects to /sv/ or /ro/)
-├── sv/index.html     ← Swedish page
-├── ro/index.html     ← Romanian page
+├── index.html        ← the site (Swedish only)
+├── sv/index.html     ← redirect to / (old bilingual URL)
+├── ro/index.html     ← redirect to / (old bilingual URL)
 └── assets/
     ├── style.css
-    ├── logo.jpg   ← dark logo, currently unused on the light design
+    ├── logo.jpg   ← old dark Casa de Piatră logo, unused
     └── menu.png   ← old price-list menu image, no longer linked
 ```
