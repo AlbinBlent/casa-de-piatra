@@ -8,10 +8,6 @@ in Stockholm.
 
 Enable GitHub Pages in repo Settings → Pages → Source: `main` branch, root `/`.
 
-## Before going live — fill in these placeholders
-
-1. **Tally.so form** — replace `TALLY_FORM_URL_HERE` in `index.html` with your Tally embed URL (e.g. `https://tally.so/embed/XXXXXX?alignLeft=1&hideTitle=1&transparentBackground=1`).
-
 ## Local development
 
 ```bash

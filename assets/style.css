@@ -319,12 +319,20 @@ p:last-child { margin-bottom: 0; }
   color: var(--gold-deep);
 }
 .contact-card a:hover { color: var(--gold-deep); }
-.tally-form iframe {
-  width: 100%;
-  border: 1px solid var(--gold-line);
-  min-height: 520px;
-  background: var(--panel);
+
+/* ── Partner ── */
+.partner-text {
+  max-width: var(--measure);
+  margin: 1.2rem auto 0;
+  text-align: center;
+  color: var(--ink-soft);
 }
+.partner-text a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold-line);
+  transition: border-color 0.2s;
+}
+.partner-text a:hover { border-color: var(--gold-deep); }
 
 /* ── Footer ── */
 footer {
